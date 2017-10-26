@@ -1,0 +1,30 @@
+{
+  "name": "javascript-code-challenges",
+  "version": "1.0.0",
+  "description": "Challenges to better solve problems in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint tests/*.test.js && eslint src/*.js && jest --verbose",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulghaddad/CS1-Code-Challenges.git"
+  },
+  "author": "Paul G Haddad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulghaddad/CS1-Code-Challenges/issues"
+  },
+  "homepage": "https://github.com/paulghaddad/CS1-Code-Challenges#readme",
+  "devDependencies": {
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^21.2.1"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "eslint-config-airbnb": "^16.1.0"
+  }
+}
