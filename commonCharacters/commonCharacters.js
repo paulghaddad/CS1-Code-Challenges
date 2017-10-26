@@ -7,3 +7,22 @@
  * Returns: 'aeiou'
 */
 
+const commonCharacters = (string1, string2) => {
+  let commonSet = new Set();
+
+  for (let i = 0; i < string1.length; i++) {
+    if (string2.match(string1[i]) && !string1[i].match(/ /)) {
+      commonSet.add(string1[i]);
+    }
+  }
+
+  return Array.from(commonSet).join('');
+};
+
+
+var characters = commonCharacters('acexivou', 'aegihobu');
+console.assert(characters === 'aeiou');
+
+var characters = commonCharacters('acex ivou', 'aegi hobu');
+console.assert(characters === 'aeiou');
+
